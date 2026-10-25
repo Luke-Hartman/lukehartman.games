@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battle Swap — Luke Hartman Games</title>
+<meta name="description" content="Battle Swap is an auto-battler with a single player campaign and a unique twist: when you win a battle, you trade your deployed units for your enemy's, rewarding you for using fewer units.">
+<style>
+  :root{
+    color-scheme:light;
+    --paper:#fdfdfb;
+    --ink:#17263f;
+    --body:#34445e;
+    --muted:#637188;
+    --line:#dbe2ec;
+    --blue:#3f74b5;
+    --red:#cf6658;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--body);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;
+  }
+  main{
+    width:min(68rem,calc(100% - 2.5rem));
+    margin:0 auto;
+    padding:clamp(2.5rem,7vw,5.5rem) 0 clamp(3rem,8vw,6rem);
+  }
+  a{
+    color:var(--ink);
+    text-decoration-line:underline;
+    text-decoration-color:#b8c5d6;
+    text-decoration-thickness:1px;
+    text-underline-offset:.22em;
+  }
+  a:hover{
+    color:var(--blue);
+    text-decoration-color:currentColor;
+  }
+  a:focus-visible{
+    outline:2px solid var(--red);
+    outline-offset:3px;
+  }
+  .site-intro h1{
+    margin:0 0 1rem;
+    color:var(--ink);
+    font-size:clamp(2.4rem,6vw,4.5rem);
+    line-height:1.02;
+    letter-spacing:-.045em;
+  }
+  .site-intro p{
+    max-width:42rem;
+    margin:0;
+    color:var(--muted);
+    font-size:1.15rem;
+  }
+  .site-nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.75rem 1.75rem;
+    margin-top:2.5rem;
+    padding:1rem 0;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .site-nav a{font-weight:600}
+  .game{padding-top:clamp(2.5rem,6vw,4.5rem)}
+  .game img{
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:6px;
+  }
+  .pitch{
+    max-width:44rem;
+    margin:1.75rem 0 0;
+    font-size:1.15rem;
+  }
+  .play-link{
+    display:inline-block;
+    margin-top:1.75rem;
+    padding:.8rem 1.25rem;
+    border-radius:6px;
+    background:var(--ink);
+    color:#fff;
+    font-weight:650;
+    text-decoration:none;
+  }
+  .play-link:hover{
+    background:var(--blue);
+    color:#fff;
+  }
+  @media (max-width:36rem){
+    main{width:calc(100% - 2rem)}
+    .site-nav{gap:.65rem 1.25rem}
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="site-intro">
+    <h1>Luke Hartman Games</h1>
+    <p>Luke Hartman Games is a solo game developer. Battle Swap is a single-player auto-battler about winning by trading your deployed units for the enemy's, with rewards for using fewer units.</p>
+  </header>
+
+  <nav class="site-nav" aria-label="Site">
+    <a href="#game">Battle Swap</a>
+    <a href="#">Newsletter</a> <!-- TODO: MailerLite hosted signup URL -->
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="mailto:luke@lukehartman.games">Contact</a>
+  </nav>
+
+  <section class="game" id="game" aria-label="Battle Swap">
+    <img src="capsule.png" alt="Battle Swap capsule art: the Wizard standing on a hex-tile arena" width="1232" height="706">
+    <p class="pitch">Battle Swap is an auto-battler with a single player campaign and a unique twist: when you win a battle, you trade your deployed units for your enemy's, rewarding you for using fewer units. Unlock upgrades, items, and spells as you go, and revisit past battles to improve solutions and reclaim units.</p>
+
+    <!-- Wishlist button: add back Nov 9 when the Steam page is public: <a class="btn btn-steam" href="https://store.steampowered.com/app/3441180">Wishlist on Steam</a> -->
+    <a class="play-link" href="https://lukehartmangames.itch.io/battle-swap">Play free in browser on itch.io</a>
+  </section>
+</main>
+</body>
+</html>
