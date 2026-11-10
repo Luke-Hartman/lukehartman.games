@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Battle Swap — Luke Hartman Games</title>
-<meta name="description" content="Battle Swap is an auto-battler with a single player campaign and a unique twist: when you win a battle, you trade your deployed units for your enemy's, rewarding you for using fewer units.">
+<meta name="description" content="Battle Swap is an auto-battler with a single player campaign and a unique twist: when you win a battle, you trade your deployed units for your enemy's, rewarding you for using fewer units. Unlock upgrades, items, and spells as you go, and revisit past battles to improve solutions and reclaim units.">
 <style>
   :root{
     color-scheme:light;
@@ -79,9 +79,15 @@
     margin:1.75rem 0 0;
     font-size:1.15rem;
   }
+  .cta-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.75rem;
+    margin-top:1.75rem;
+  }
+  .cta-row .play-link{margin-top:0}
   .play-link{
     display:inline-block;
-    margin-top:1.75rem;
     padding:.8rem 1.25rem;
     border-radius:6px;
     background:var(--ink);
@@ -93,6 +99,12 @@
     background:var(--blue);
     color:#fff;
   }
+  .play-link.steam{
+    background:var(--blue);
+  }
+  .play-link.steam:hover{
+    background:var(--ink);
+  }
   @media (max-width:36rem){
     main{width:calc(100% - 2rem)}
     .site-nav{gap:.65rem 1.25rem}
@@ -103,7 +115,7 @@
 <main>
   <header class="site-intro">
     <h1>Luke Hartman Games</h1>
-    <p>Luke Hartman Games is a solo game developer. Battle Swap is a single-player auto-battler about winning by trading your deployed units for the enemy's, with rewards for using fewer units.</p>
+    <p>Luke Hartman Games is a solo game developer.</p>
   </header>
 
   <nav class="site-nav" aria-label="Site">
@@ -115,11 +127,13 @@
   </nav>
 
   <section class="game" id="game" aria-label="Battle Swap">
-    <img src="capsule.png" alt="Battle Swap capsule art: the Wizard standing on a hex-tile arena" width="1232" height="706">
+    <img src="hero.jpg" alt="Battle Swap key art by Paul Scott Canavan: a red-robed wizard and a vampire face a pirate captain and an orc across a mountain battlefield, with the Battle Swap logo below" width="1920" height="1080">
     <p class="pitch">Battle Swap is an auto-battler with a single player campaign and a unique twist: when you win a battle, you trade your deployed units for your enemy's, rewarding you for using fewer units. Unlock upgrades, items, and spells as you go, and revisit past battles to improve solutions and reclaim units.</p>
 
-    <!-- Wishlist button: add back Nov 9 when the Steam page is public: <a class="btn btn-steam" href="https://store.steampowered.com/app/3441180">Wishlist on Steam</a> -->
-    <a class="play-link" href="https://lukehartmangames.itch.io/battle-swap">Play free in browser on itch.io</a>
+    <div class="cta-row">
+      <a class="play-link steam" href="https://store.steampowered.com/app/3441180/">Wishlist on Steam</a>
+      <a class="play-link" href="https://lukehartmangames.itch.io/battle-swap">Play free in browser on itch.io</a>
+    </div>
   </section>
 </main>
 </body>
