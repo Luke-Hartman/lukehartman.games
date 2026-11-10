@@ -7,14 +7,15 @@
 <meta name="description" content="Battle Swap is an auto-battler with a single player campaign and a unique twist: when you win a battle, you trade your deployed units for your enemy's, rewarding you for using fewer units. Unlock upgrades, items, and spells as you go, and revisit past battles to improve solutions and reclaim units.">
 <style>
   :root{
-    color-scheme:light;
-    --paper:#fdfdfb;
-    --ink:#17263f;
-    --body:#34445e;
-    --muted:#637188;
-    --line:#dbe2ec;
-    --blue:#3f74b5;
-    --red:#cf6658;
+    color-scheme:dark;
+    --paper:#1e1e28;
+    --surface:#262633;
+    --ink:#e0e6f0;
+    --body:#e0e6f0;
+    --muted:#a9b2c6;
+    --line:#262633;
+    --blue:#7a9db8;
+    --red:#7a9db8;
   }
   *{box-sizing:border-box}
   body{
@@ -30,9 +31,9 @@
     padding:clamp(2.5rem,7vw,5.5rem) 0 clamp(3rem,8vw,6rem);
   }
   a{
-    color:var(--ink);
+    color:var(--blue);
     text-decoration-line:underline;
-    text-decoration-color:#b8c5d6;
+    text-decoration-color:#4e6175;
     text-decoration-thickness:1px;
     text-underline-offset:.22em;
   }
@@ -66,7 +67,8 @@
     border-top:1px solid var(--line);
     border-bottom:1px solid var(--line);
   }
-  .site-nav a{font-weight:600}
+  .site-nav a{font-weight:600;color:var(--ink)}
+  .site-nav a:hover{color:var(--blue)}
   .game{padding-top:clamp(2.5rem,6vw,4.5rem)}
   .game img{
     display:block;
@@ -90,20 +92,22 @@
     display:inline-block;
     padding:.8rem 1.25rem;
     border-radius:6px;
-    background:var(--ink);
-    color:#fff;
+    background:var(--surface);
+    color:var(--ink);
     font-weight:650;
     text-decoration:none;
   }
   .play-link:hover{
     background:var(--blue);
-    color:#fff;
+    color:#1e1e28;
   }
   .play-link.steam{
     background:var(--blue);
+    color:#1e1e28;
   }
   .play-link.steam:hover{
     background:var(--ink);
+    color:#1e1e28;
   }
   @media (max-width:36rem){
     main{width:calc(100% - 2rem)}
